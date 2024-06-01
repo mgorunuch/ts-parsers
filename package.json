@@ -1,6 +1,6 @@
 {
   "name": "ts-parsers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "type": "commonjs",
   "main": "dist/index.js",
