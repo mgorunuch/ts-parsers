@@ -1,0 +1,38 @@
+{
+  "name": "ts-parsers",
+  "version": "1.0.3",
+  "description": "",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && npm run build:ts",
+    "build:ts": "tsc -p tsconfig.json --outDir dist",
+    "pub": "npm run build && npm publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  },
+  "author": {
+    "name": "Ihor Herasymovych",
+    "email": "me@mgorunuch.pro",
+    "url": "https://mgorunuch.pro"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/mgorunuch/ts-parsers#readme",
+  "repository": {
+    "url": "https://github.com/mgorunuch/ts-parsers"
+  },
+  "bugs": {
+    "url": "https://github.com/mgorunuch/ts-parsers/issues"
+  },
+  "keywords": [
+    "helpers",
+    "parsers",
+    "typescript"
+  ]
+}
