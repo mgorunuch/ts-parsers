@@ -1,4 +1,4 @@
-import {NotValidNumberError} from "@/number";
+import {NotValidNumberError} from "./number";
 
 export function floatParse(inp: any): number | undefined {
   if (typeof inp === 'number') return inp;

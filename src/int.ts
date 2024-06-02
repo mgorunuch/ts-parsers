@@ -1,4 +1,4 @@
-import {isNumber, NotValidNumberError} from "@/number";
+import {isNumber, NotValidNumberError} from "./number";
 
 export function intParse(inp: any): number | undefined {
   if (inp === null || inp === undefined) return undefined;
