@@ -1,22 +1,8 @@
 {
   "name": "ts-parsers",
+  "type": "commonjs",
   "version": "1.0.5",
   "description": "",
-  "type": "commonjs",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "rm -rf dist && npm run build:ts",
-    "build:ts": "tsc -p tsconfig.json --outDir dist",
-    "pub": "npm run build && npm publish"
-  },
-  "files": [
-    "dist"
-  ],
-  "peerDependencies": {},
-  "devDependencies": {
-    "typescript": "^5.4.3"
-  },
   "author": {
     "name": "Ihor Herasymovych",
     "email": "me@mgorunuch.pro",
@@ -34,5 +20,21 @@
     "helpers",
     "parsers",
     "typescript"
-  ]
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && npm run build:ts",
+    "build:ts": "tsc -p tsconfig.json --outDir dist",
+    "pub": "npm run build && npm publish",
+    "lint": "eslint src --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.20.0",
+    "eslint": "^9.4.0",
+    "typescript": "^5.4.3"
+  }
 }

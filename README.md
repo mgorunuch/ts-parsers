@@ -29,7 +29,6 @@ parser.bool('true'); // true
 parser.bool('ssss'); // undefined
 ```
 
-
 ### `int`
 The `int` function parses a string into an integer value. It returns the integer value if the string is a valid integer, and throws an error otherwise.
 
@@ -85,7 +84,6 @@ strParse.req('' as any)
 parser.str('' as any)
 strParse('' as any)
 ```
-
 
 ### `str.typed`
 The `str.typed` function parses a string into a string value. It returns the string value if the string is a valid string, and throws an error otherwise.

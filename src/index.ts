@@ -1,17 +1,18 @@
-import { floatParse } from './float';
-export * from './float';
+import { floatParse } from './float'
 
-import { intParse } from './int';
-export * from './int';
+import { intParse } from './int'
 
-import { strParse } from './string';
-export * from './string';
+import { strParse } from './string'
 
-import { boolParse } from './bool';
-export * from './bool';
+import { boolParse } from './bool'
 
-import { dateParse } from './date';
-export * from './date';
+import { dateParse } from './date'
+
+export * from './float'
+export * from './int'
+export * from './string'
+export * from './bool'
+export * from './date'
 
 export const parser = {
   bool: boolParse,
@@ -19,4 +20,4 @@ export const parser = {
   float: floatParse,
   str: strParse,
   date: dateParse,
-};
+}
